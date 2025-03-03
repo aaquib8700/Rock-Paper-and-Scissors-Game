@@ -82,7 +82,7 @@ function playgame(userchoice){
         drawgame();
     }
     else{
-        const userwin=true;
+        let userwin=true;
         if(userchoice==="rock"){
             userwin=compchoice==="paper"? false:true;
         }
@@ -101,7 +101,7 @@ function gencompchoice(){
     const options=["rock","scissors","paper"];
     const randind=Math.floor(Math.random()*3);
     return options[randind];
-    // console.log(arr[randind]); 
+    console.log(arr[randind]); 
 }
 
 function drawgame(){
